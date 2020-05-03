@@ -4,12 +4,21 @@ Custom Range slider
 
 ```jsx
      <RangeSlider
-        min={slider.min}
-        max={slider.max}
-        step={slider.step}
-        value={slider.value}
+        min={0}
+        max={100}
+        step={1}
+        value={value}
         onChange={(e) => {
-          setSlider({ ...slider, value: e.target.value });
+          setValue(e.target.value);
         }}
       />
 ```
+
+# Run & Build
+```
+ npm install
+ npm run start
+ npm run build
+```
+# Demo Link (Netlify)
+[https://reverent-bartik-7bd35b.netlify.app/](https://reverent-bartik-7bd35b.netlify.app/)
